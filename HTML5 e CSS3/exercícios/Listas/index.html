@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Listas</title>
+</head>
+<body>
+    <h1>Listas Ordenadas</h1>
+    <p>Uma lista ordenada, segue uma ordem, para isso utiliza-se a tag OL para delimitar a lista e LI para idetificar cada item</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+    <p>A tag OL tem um parâmetro type, que pode ser 1=listas numeradas, A=listas alfabéticas, a=alfabéticas minúsculas, I=algarismos romanos, i=algarismos romanos em minusculo</p>
+    <p>Pode também indicar o início da contagem com o parâmetro START</p>
+    <ol type="I" start="5">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+    <br>
+    <h1>Listas não Ordenadas</h1>
+    <p>Uma lista não ordenada, são aquelas que a ordem não influenciára no significado da lista, utiliza-se a tag UL</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <p>Podemos definir parâmteros também, como disc, circle, square...</p>
+    <br>
+    <h1>Listas Mistas</h1>
+    <p>Podemos também criar listas mistas</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ol type="a">
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+            <li>Item 2.3</li>
+        </ol>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <hr>
+    <h1>Exercício Proposto</h1>
+    <h2>Lista dos meu Jogos Favoritos</h2>
+    <ul circle>
+        <li>Playstation 4</li>
+        <ol type="1">
+            <li>Red Dead Redemption</li>
+            <ul square><li>Red Dead Redemption II</li></ul>
+            <li>Overwatch</li>
+            <ul square><li>Overwatch 2</li></ul>
+            <li>GTA</li>
+            <ul square><li>GTA V</li></ul>
+        </ol>
+    </ul>
+    <br>
+    <h1>Lista de Definições</h1>
+    <p>Uma lista de defiições é basicamente uma lista onde teremos o termo e a definição, para isso utilziamos as tags DL, DT e DD</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para criar o conteúdo de sites.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a especificação de estilos em sites</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programção para criar interatividades em sites</dd>
+    </dl>
+</body>
+</html>

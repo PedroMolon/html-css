@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /*Block-level*/
+        h1 {
+            height: 300px;
+            width: 300px;
+            background-color: lightgray;
+            border: 5px solid black;
+            padding: 10px 10px;
+            margin: auto; /*AUTO - Deixa a caixa no meio da tela (centraliza)*/
+            outline: 5px dashed red;
+            text-align: center;
+        }
+
+        /*Inline-level*/
+        span {
+            height: auto;
+            width: auto;
+            background-color: lightgray;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Configuração de Caixa</h2>
+    <p>Height = Altura</p>
+    <p>Width = Largura</p>
+    <p>Background-color = Cor de fundo</p>
+    <p>Border = Borda, que cerca o conteúdo</p>
+    <p>Padding = Espaço interno entre a borda e o conteúdo</p>
+    <p>Margin = Espaço externo (margem) a partir da borda</p>
+    <p>Outline = Contorno dentro da margem, ao redor da borda</p>
+    <h2>Tipos de Caixa</h2>
+    <h3>Block-level</h3>
+    <h1>Exemplo de caixa block-level</h1>
+    <p>Pula para a linha de baixo, ocupa 100% da largura da tela, exemplo é a tag DIV</p>
+    <h3>Inline-level</h3>
+    <p><span>Exemplo de caixa inline-level</span>-Continua na mesma linha, e não ocupa 100% da largura, exemplo é a tag SPAN</p>
+    <h2>Shorthands</h2>
+    <h3>É uma maneira de facilitar</h3>
+    <p>Border = largura, tipo, cor</p>
+    <p>Outline = largura, tipo, cor</p>
+    <p>Padding = topo, direita, baixo, esquerda</p>
+    <p>Margin = topo, direita, baixo, esquerda</p>
+    <h3>Para colocar configuração de mesmo tamanho</h3>
+    <p>Use apenas um valor</p>
+    <h3>Para colocar configuração de 2 medidas</h3>
+    <p>Use dois valores, o primeiro (topo e base) e o segunda (esquerda e direita)</p>
+    <h2>Display</h2>
+    <p>É um comando para modificar o tipo de caixa, para block ou inline level</p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        a {
+            color: red;
+             text-decoration: none;
+             font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial::before {
+            content: "=> ";
+            color: rgba(255, 0, 0, 0.696);
+        }
+
+        .especial::after {
+            content: " <=";
+            text-decoration: none;
+            color: rgba(255, 0, 0, 0.696);
+        }
+    </style>
+</head>
+<body>
+    <!--Pseudo-elementos mexem no conteúdo do elemento, se utiliza "::"-->
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/PedroMolon" target="_blank">GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCCvu0Fq0EJQDCt_FAqnq2uQ" target="_blank" class="especial">Youtube</a></li>
+        <li><a href="link para site" target="_blank"></a>Site</li>
+    </ul>
+</body>
+</html>

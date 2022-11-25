@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras nas Caixas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #circulo {
+            height: 30px;
+            width: 30px;
+            background-color: lightblue;
+            border-radius: 50%; /*Faz um círculo*/
+            box-shadow: none;
+        }
+        header > div {
+            height: 260;
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 3px 3px 3px gray; /*Sombra*/
+            border-radius: 10px 10px; /*Borda*/
+        }
+        header > div > h1 {
+            text-align: center;
+        }
+        span {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+        <h1>Minha Caixa de Teste</h1>
+        <h2>Sombras</h2>
+        <p>Sombras são muito úteis para dar volume, para dar a sensação de que as caixas estão ali realmente</p>
+        <p>Para isso utilizamos o <span>box-shadow</span></p>
+        <p><span>inset</span> faz a sombra interna</p>
+        </div>
+        <div>
+            <h1>Bordas Decoradas</h1>
+            <p>Utilizamos <span>border-radious</span> para arredondar</p>
+        </div>
+        <div id="circulo"></div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens em HTML</title>
+</head>
+<body>
+    <h1>Imagens Flexíveis</h1>
+    <p>Para poder adaptar o contúdo ao tamanho da tela, precisamos gerar imagens de tamanho diferentes e a fazer o navegador carregar a imagem certa para cada situação, para isso utilizamos as tags PICTURE e SOURCE.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="A imagem flexível funciona">
+    </picture>
+    <p>Type= Tipo de imagem utilizada, srcset= Vai configurar o nome da imagem que será carregada qunado o tamanho indicado for atingido, media= indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo SRCSET.</p>
+    <br>
+    <h1>Áudio</h1>
+    <p>Para utilziar audios é necessário utilizar a tag AUDIO</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+        <source src="audio/guanacast-33.mp3" type="audio/ogg">
+        <source src="audio/guanacast-33.mp3" type="image/wav">
+        <p>Seu navegador não suporta áudio <a href="midia" download="guanacast-33.mp3" type="audio/mpeg"></a></p>
+    </audio>
+    <h2>Atributos da tag Audio</h2>
+    <p>PRELOAD= indica se o áudio será pré-carregado ou não e aceita três valores, metadata= vai carregar apenas as informações sobre o arquivo, none= não vai carregar nada até clicar no play, auto= vai carregar o arquivo de áudio inteiro, assim que a página for carregada.</p>
+    <p>CONTROLS= vai apresentar o player na tela</p>
+    <p>AUTOPLAY= quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada</p>
+    <p>LOOP= vai fazer que o áudio seja repetido eternamente</p>
+    <h1>Vídeos</h1>
+    <p>Para poder colocar vídeos, utilizamos a tag VIDEO, caso o arquvio seja hospedado em nosso próprio servidor</p>
+    <video width="600" poster="images/limoes-capa.png" controls autoplay>
+        <source src="video/meu-video.webm" type="video/webm">
+        <source src="video/meu-video.mp4" type="video/mp4">
+        <source src="video/meu-video.m4v" type="video/mv4">
+        <source src="video/meu-video.ogv" type="video/ogv">
+        <p>Infelizmente seu navegadr não conseguiu carregar o vídeo</p>
+    </video>
+    <h2>Atributos da tag Video</h2>
+    <p>WIDTH= vai indicar a largura que o vídeo vai ter na tela</p>
+    <p>POSTER= condfigura uma imgem que vai aparecer como uma capa</p>
+    <p>CONTROLS= vai configurar se os controles do vídeo vão aparecer</p>
+    <p>AUTOPLAY= diz para o navegador se o vídeo vai começar a troca automaticamente</p>
+    <h2>Vídeo do  Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hfJ4Km46A-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Para colocar vídeo hospedado no youtube, deve pegar o código pronto ja no youtube, dentro da tag IFRAME</p>
+</body>
+</html>
