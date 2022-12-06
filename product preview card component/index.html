@@ -93,7 +93,39 @@
       font-size: 1.5em;
     }
 
-    .background
+    #valor {
+      font-size: 3em;
+      color: darkgreen;
+      display: inline;
+      float: left;
+    }
+
+    #desconto {
+      font-size: 1.2em;
+      font-weight: normal;
+      color: var(--dark_grayish_blue);
+      position: relative;
+      bottom: -2.5%;
+    }
+
+    button {
+      background-color: darkgreen;
+      color: var(--White);
+      width: 300px;
+      height: 60px;
+      display: block;
+      margin: auto;
+      border-radius: 10px;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    button img {
+      width: 25px;
+      height: 20px;
+      padding-right: 8px;
+      color: var(--White);
+    }
 
     footer {
       display: block;
@@ -114,15 +146,15 @@
         Perfumer-Creator for the House of CHANEL.
       </p>
       <h1 id="valor">$149.99</h1>
-      <h1 id="desconto">$169.99</h1>
-      <button>Add to Cart</button>
+      <h1 id="desconto"><s>$169.99</s></h1>
+      <button><img src="images/trolley.png" alt="Icone market">Add to Cart</img></button>
     </article>
   </div>
 </body>
 <footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/PedroMolon">PedroMolon</a>.
+    Coded by <a href="https://github.com/PedroMolon" target="_blank">PedroMolon</a>.
   </div>
 </footer>
 </html>
