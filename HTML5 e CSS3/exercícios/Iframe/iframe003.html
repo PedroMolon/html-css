@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação no iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navagação dentro do iframe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia vero fuga, beatae illum ab reiciendis officia iste quia itaque a tempora commodi esse asperiores, enim, laborum totam rem ipsam facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nihil nisi eveniet quos incidunt tempora ut voluptate maiores esse enim voluptatum eius dolor ipsum cum dignissimos. Voluptatum vero similique quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem et, fugiat molestias eum rem laudantium deserunt quidem repudiandae totam adipisci ipsum! Aut corrupti possimus velit delectus eligendi expedita quibusdam alias.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <iframe src="" name="frame" frameborder="1" srcdoc="<p>Escolha uma das opções a cima</p>"> <!--SRCDOT é uma tag onde podemos colocar html nela-->
+        <p>Seu navegador não é compatível a isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto impedit asperiores dignissimos expedita nobis ipsa soluta magni itaque fuga! Debitis quia et reiciendis, corporis tempore ipsum ducimus saepe veritatis aliquid. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum illum dolor alias qui! Quas dolorem, veniam sit distinctio numquam, facilis placeat similique delectus perferendis maiores dolorum quasi? Minus, sint natus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae eius velit saepe natus neque! Pariatur consequatur, aut hic eos delectus autem fugiat! Omnis assumenda cupiditate enim, at inventore sequi? Tempora.</p>
+</body>
+</html>
