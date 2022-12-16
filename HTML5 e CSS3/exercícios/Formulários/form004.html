@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulários</title>
+    <style>
+        * {
+            margin: 2px;
+            padding: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <fieldset> <!--Borda em torno dos dados de formulário-->
+        <legend>Dados Pessoais</legend> <!--Legenda para o fieldset-->
+        <form action="cadastro.c" method="get" autocomplete="on">
+            <!--E-MAIL-->
+            <div>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </div>
+            <div>
+                <label for="itelefone">Telefone: </label>
+                <input type="tel" name="telefone" id="itelefone" autocomplete="tel" required>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
