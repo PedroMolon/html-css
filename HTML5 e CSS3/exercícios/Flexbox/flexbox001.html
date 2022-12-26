@@ -6,33 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .flex-container {
-            background-color: lightblue;
-            width: 900px;
-            height: 300px;
-            border: 2px solid black;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
+        body {
+            background-color: rgb(255, 255, 84);
         }
         div {
-            width: 200px;
-            height: 200px;
-            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+            color: gray;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .bloco1 {
+            background-color: rgb(100, 217, 100);
+        }
+        .bloco2 {
+            background-color: rgb(105, 105, 247);
+        }
+        .bloco3 {
+            background-color: rgb(255, 104, 104);
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
     </style>
 </head>
 <body>
-    <div class="flex-container">
-        <div style="background-color: red;">1</div>
-        <div style="background-color: yellow;">2</div>
-        <div style="background-color: green;">3</div>
-    </div>
+    <main class="container">
+        <div class="bloco1">1</div>
+        <div class="bloco2">2</div>
+        <div class="bloco3">3</div>
+    </main>
 </body>
 </html>

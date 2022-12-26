@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/*
+    Mobile: 375px
+    Desktop: 1440px
+    Font size (paragraph): 15px
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/*Váriaveis*/
+:root {
+    --White: #ffffff;
+    --Light_gray: #d6e2f0;
+    --Grayish_blue: #7b879d;
+    --Dark_blue: #1f3251;
+    --fonte: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--Light_gray);
+}
+
+main.bloco {
+    background-color: var(--White);
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+main > .qr {
+    width: 90%;
+    height: 350px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    background: black url(../images/image-qr-code.png) center center no-repeat fixed;
+    background-size: cover;
+}
+
+main.bloco > h1 {
+    font-size: 1.9em;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte);
+    color: var(--Dark_blue);
+}
+
+main.bloco > p {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.4em;
+    color: var(--Grayish_blue);
+}
